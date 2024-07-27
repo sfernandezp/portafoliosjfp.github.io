@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio-Samuel-Fernandez</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Samuel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <!--<section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpeg" alt="">
+            </div>
+            <h1>Samuel Fernandez</h1>
+            <h2>Tecnico superior universitario en Informatica</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- SECCION INICIO -->
+<section id="inicio" class="inicio">
+    <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="img/foto.jpeg" alt="">
+        </div>
+        <h1>Samuel Fernandez</h1>
+        <h2>Tecnico superior universitario en Informatica</h2>
+        <div class="redes">
+            <a href="https://wa.me/04264682027" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/your-github-username" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://t.me/your-telegram-username" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Samuel Fernandez.</span>
+                Un apasionado desarrollador web Full Stack con experiencia en tecnologías como Git, TypeScript, JavaScript, Express.js, Node.js y MySQL. Me encanta crear aplicaciones web y aprender nuevas habilidades..</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            22-09-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +58 426 468 2027
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            samueljose2209@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Santa isabel-Barquisimeto-Estado Lara-Venezuela
+                        </li>
+                        <li>
+                            <strong>Idioma</strong>
+                            Español
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>Windows</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/18Z32XUrSdw6buo47hbDdscRo9tOBa47S/view?usp=sharing" download="curriculum.pdf">
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button></a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Tecnologías de desarrollo-->
+                <div class="col">
+                    <h3>Tecnologías de desarrollo
+                    </h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tecnologías de gestión de trabajo-->
+                <div class="col">
+                    <h3>Tecnologías de gestión de trabajo</h3>
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trello</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Github</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Swagger</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>58%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Postman</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>53%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM-->
+    <!--<p>En este instituto aprendi sobre lenguajes de programación como Tsu en informatica aumentando mis habilidades y conocimientos hacia esta carrera.</p> 
+    <div class="circuloi"></div>
+</div>
+</div>
+<div class="item izq">
+<h4>Experiencia Laboral</h4>
+<span class="casa">Proyectos tales como una aplicacion Web para una tienda llamada inversabor donde se maneja el registro de ventas y inventario</span>
+<span class="fecha">2020 - 2024</span>
+<p>En este proyecto aprendi sobre el manejo de bases de datos y el uso de html, css, javascript y php.</p>-->
+ <!--<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Tecnico Superior Universitario en Informatica</h4>
+                    <span class="casa">Instituto Universitario Jesus Obrero</span>
+
+                    <p>En este instituto aprendi sobre lenguajes de programación como Tsu en informatica aumentando mis habilidades y conocimientos hacia esta carrera.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Bachillerato</h4>
+                    <span class="casa">Colegio las Americas</span>
+
+                    <p>En este colegio me gradue como Bachiller en ciencias.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                
+            </div>-->
+
+
+    
+    
+      <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+          <h2>Curriculum</h2>
+          <div class="fila">
+            <div class="col izquierda">
+              <h3>Certificados</h3>
+              <div class="item der">
+                <h4>Certificado en Html</h4>
+                <span class="casa">Sololearn</span>
+                <img src="img/cursohtml.jpeg" alt="" width="100%" height="auto">
+                <p>En este curso aprendi el Manejo de etiquetas Html para maquetar y estilizar paginas.</p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+              <div class="item der">
+                <h4>Certificado en Php</h4>
+                <span class="casa">Sololearn</span>
+                <img src="img/cursophp.jpeg" alt="" width="100%" height="auto">
+                <div class="circulod"></div>
+              </div>
+              <div class="item der">
+                <h4>Curso de Programacion desde 0</h4>
+                <span class="casa">Instituto Universitario Jesus Obrero</span>
+                <img src="img/cursoprogram.jpeg" alt="" width="100%" height="auto">
+                <p>En este Curso aprendi como logica de programacion y como se deben resolver problemas programacion, pseudocodigo, algoritmos y operadores.</p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col derecha">
+              <h3>Educación</h3>
+              <div class="item izq">
+                <h4>Tecnico Superior Universitario en Informatica</h4>
+                <span class="casa">Instituto Universitario Jesus Obrero</span>
+                <p>En este instituto aprendi sobre lenguajes de programación como Tsu en informatica aumentando mis habilidades y conocimientos hacia esta carrera.</p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Bachillerato</h4>
+                <span class="casa">Colegio las Americas</span>
+                <p>En este colegio me gradue como Bachiller en ciencias.</p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SECCION PORTFOLIO -->
+    <!--<section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/inversabor.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Gestion de ventas y inventario</h3>
+                        <p>Aplicacion Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/paginaweb.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto Website</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/foto.jpeg" alt="" width="100%" height="auto">
+                    <div class="overlay">
+                        <h3>Aplicacion</h3>
+                        <p>principios de una aplicacion que se asemeja a Instagram</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="" width="100%" height="auto">
+                    <div class="overlay">
+                        <h3>Gestion de proyectos</h3>
+                        <p>RRHH</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="" width="100%" height="auto">
+                    <div class="overlay">
+                        <h3>hkh</h3>
+                        <p>haha</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>6</h3>
+                        <p>haha66</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <a href="img/inversabor.jpeg" target="_blank">
+                    <img src="img/inversabor.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Gestion de ventas y inventario</h3>
+                        <p>Aplicacion Web</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="img/paginaweb.jpeg" target="_blank">
+                    <img src="img/paginaweb.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto Website</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="img/trellop.jpeg" target="_blank">
+                    <img src="img/trellop.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Manjeo de tareas</h3>
+                        <p>Proyecto en equipo</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="img/aplicacioninstagram.jpeg" target="_blank">
+                    <img src="img/aplicacioninstagram.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto sobre red social</h3>
+                        <p>Aplicacion web</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="img/paginaweb.jpeg" target="_blank">
+                    <img src="img/paginaweb.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto Website</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="img/paginaweb.jpeg" target="_blank">
+                    <img src="img/paginaweb.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto Website</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                </a>
+            </div>
+                <!-- ... -->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/samueljose2209@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="nombre" placeholder="Tú Nombre">
+                    <input type="text" mane="phone" placeholder="Número telefónico">
+                    <input type="text" name="email" placeholder="Dirección de correo">
+                    <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="sutmit" class="boton">Enviar</button>
+                </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Santa Isabel calle 7 con Carrera 2-Barquisimeto-Estado Lara-Venezuela
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamar: +58 426-4682027 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: samueljose2209@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer LinkedIn, WhatsApp´, GitHub, Telegram -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
